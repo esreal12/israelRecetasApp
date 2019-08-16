@@ -19,11 +19,15 @@ class DataManager {
 
     getRecipesCallback(e) {
         let request = e.target;
+
         if(request.readyState === XMLHttpRequest.DONE){
             let data = JSON.parse(request.responseText);
             console.log(data); 
             
-            let recipe = new Recipe();
+            // data.map(recipeData => {
+            //     let newRecipe = new Recipe();
+            // });
         }
+
     }
 }
